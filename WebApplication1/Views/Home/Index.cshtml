@@ -29,8 +29,20 @@
 
         }
 
-        function populateSecondTextBox() {
-            document.getElementById('txtSecond').value = document.getElementById('txtFirst').value;
+        function populateStory1() {
+            document.getElementById('userstory1right').value = document.getElementById('userstory1left').value;
+        }
+        function populateStory2() {
+            document.getElementById('userstory2right').value = document.getElementById('userstory2left').value;
+        }
+        function populateStory3() {
+            document.getElementById('userstory3right').value = document.getElementById('userstory3left').value;
+        }
+        function populateStory4() {
+            document.getElementById('userstory4right').value = document.getElementById('userstory4left').value;
+        }
+        function populateStory5() {
+            document.getElementById('userstory5right').value = document.getElementById('userstory5left').value;
         }
 
     </script>
@@ -40,37 +52,37 @@
 
     user story one:<br>
     <label>enter text here:</label>
-    <input type="text" id="txtFirst" onkeyup="populateSecondTextBox();" />
+    <input type="text" id="userstory1left" onkeyup="populateStory1();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="txtSecond" /> <br>
+    <input type="text" id="userstory1right" /> <br>
 
     user story two:<br>
     <label>enter text here:</label>
-    <input type="text" id="txtFirst" onkeyup="populateSecondTextBox();" />
+    <input type="text" id="userstory2left" onkeyup="populateStory2();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="txtSecond" /> <br>
+    <input type="text" id="userstory2right" /> <br>
 
     user story three:<br>
     <label>enter text here:</label>
-    <input type="text" id="txtFirst" onkeyup="populateSecondTextBox();" />
+    <input type="text" id="userstory3left" onkeyup="populateStory3();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="txtSecond" /> <br>
+    <input type="text" id="userstory3right" /> <br>
 
     user story four:<br>
     <label>enter text here:</label>
-    <input type="text" id="txtFirst" onkeyup="populateSecondTextBox();" />
+    <input type="text" id="userstory4left" onkeyup="populateStory4();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="txtSecond" /> <br>
+    <input type="text" id="userstory4right" /> <br>
 
     user story five:<br>
     <label>enter text here:</label>
-    <input type="text" id="txtFirst" onkeyup="populateSecondTextBox();" />
+    <input type="text" id="userstory5left" onkeyup="populateStory5();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="txtSecond" /> <br>
+    <input type="text" id="userstory5right" /> <br>
 
 </div>
