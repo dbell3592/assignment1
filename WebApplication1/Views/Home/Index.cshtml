@@ -8,26 +8,7 @@
 
 
 
-        function bianarydetect() {
 
-
-        }
-
-        function boldconvert() {
-
-        }
-
-        function italicsconvert() {
-
-        }
-
-        function reversetext() {
-
-        }
-
-        function darkmode() {
-
-        }
 
         function populateStory1() {
             document.getElementById('userstory1right').value = document.getElementById('userstory1left').value;
@@ -56,34 +37,55 @@
     <input type="text" id="userstory1left" onkeyup="populateStory1();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="userstory1right" /> <br>
+    <input type="text" id="userstory1right" />
+    <button name="greentext" type="button" onclick="greenrender()">change to green</button><br>
+
+    <script>
+        function greenrender() {
+            document.getElementById("userstory1right").style.color = "green";
+        }
+    </script>
+
+
 
     user story two:<br>
     <label>enter text here:</label>
     <input type="text" id="userstory2left" onkeyup="populateStory2();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="userstory2right" /> <br>
+    <input type="text" id="userstory2right" />
+    <button type="button">change to green</button><br>
+
 
     user story three:<br>
     <label>enter text here:</label>
     <input type="text" id="userstory3left" onkeyup="populateStory3();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="userstory3right" /> <br>
+    <input type="text" id="userstory3right" />
+    <button name="boldtext" type="button" onclick="boldify()"> change to bold</button><br>
+    <script>
+        function boldify() {
+            document.getElementById("userstory3right").style.fontWeight = "900";
+        }
+    </script>
+
 
     user story four:<br>
     <label>enter text here:</label>
     <input type="text" id="userstory4left" onkeyup="populateStory4();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="userstory4right" /> <br>
+    <input type="text" id="userstory4right" />
+    <button type="button">change to green</button><br>
+
 
     user story five:<br>
     <label>enter text here:</label>
     <input type="text" id="userstory5left" onkeyup="populateStory5();" />
     <br>
     <label>text displayed:</label>
-    <input type="text" id="userstory5right" /> <br>
+    <input type="text" id="userstory5right" />
+    <button type="button">change to green</button><br>
 
 </div>
