@@ -26,20 +26,24 @@
             document.getElementById('userstory5right').value = document.getElementById('userstory5left').value;
         }
 
-
     </script>
+
+
 
     <h1 class="display-4"><u>Welcome</u></h1>
 
+    <br>
 
-    user story one:<br>
+
+    <b>user story one:</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory1left" onkeyup="populateStory1();" />
-    <br>
+
     <label>text displayed:</label>
     <input type="text" id="userstory1right" />
     <button name="greentext" type="button" onclick="greenrender()">change to green</button><br>
-
+    <br>
+    <br>
     <script>
         function greenrender() {
             document.getElementById("userstory1right").style.color = "green";
@@ -48,22 +52,26 @@
 
 
 
-    user story two:<br>
+    <b>user story two:</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory2left" onkeyup="populateStory2();" />
-    <br>
+
     <label>text displayed:</label>
     <input type="text" id="userstory2right" />
-    <button type="button">is it bianary</button><br>
+    <button type="button">is it binary</button><br>
+    <br>
+    <br>
 
 
-    user story three:<br>
+    <b>user story three:</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory3left" onkeyup="populateStory3();" />
-    <br>
+
     <label>text displayed:</label>
     <input type="text" id="userstory3right" />
     <button name="boldtext" type="button" onclick="boldify()"> change to bold</button><br>
+    <br>
+    <br>
     <script>
         function boldify() {
             document.getElementById("userstory3right").style.fontWeight = "900";
@@ -71,13 +79,15 @@
     </script>
 
 
-    user story four:<br>
+    <b>user story four:</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory4left" onkeyup="populateStory4();" />
-    <br>
+
     <label>text displayed:</label>
     <input type="text" id="userstory4right" />
     <button name="italisize" type="button" onclick="italisize()">change to italics </button><br>
+    <br>
+    <br>
     <script>
         function italisize() {
             document.getElementById("userstory4right").style.fontStyle = 'italic';
@@ -85,17 +95,25 @@
     </script>
 
 
-    user story five:<br>
+    <b>user story five:</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory5left" onkeyup="populateStory5();" />
-    <br>
+
     <label>text displayed:</label>
     <input type="text" id="userstory5right" />
     <button type="button">reversetext</button><br>
+    <br>
+    <br>
 
-    <button type="button">bianary conversion</button><br>
-    <button type="button">hex conversion</button><br>
 
-    <button name="darkmode" type="button">dark mode</button><br>
-   
+
+    <button type="button" id="darkmode" onclick="darkmode('gray');">darkmode</button>
+
+    <script>
+        function darkmode(color) {
+            document.body.style.background = color;
+        }
+
+    </script>
+
 </div>
