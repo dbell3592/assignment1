@@ -107,13 +107,21 @@
 
 
 
-    <button type="button" id="darkmode" onclick="darkmode('gray');">darkmode</button>
+    <button type="button" id="darkmode" onclick="darkmode('gray'); darkmode2('white');">darkmode</button>
+    <button type="button"value="Refresh Page" onClick="window.location.reload()">lightmode</button>
+        <script>
+            function darkmode(color) {
+                document.body.style.background = color;
+            }
 
-    <script>
-        function darkmode(color) {
-            document.body.style.background = color;
-        }
+        </script>
+        <script>
+            function darkmode2(color) {
+                document.body.style.color = color;
+            }
 
-    </script>
+        </script>
+
+
 
 </div>
