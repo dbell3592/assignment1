@@ -31,7 +31,7 @@
     <br>
 
 
-    <b>user story one:</b><br>
+    <b>enter the text you want on a green background</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory1left" onkeyup="populateStory1();" />
 
@@ -48,19 +48,37 @@
 
 
 
-    <b>user story two:</b><br>
+    <b>enter a number to see if its binary:</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory2left" onkeyup="populateStory2();" />
 
     <label>text displayed:</label>
     <input type="text" id="userstory2right" />
-    <button type="button">is it binary</button><br>
+    <button type="button" onclick="binaryCheck()">is it binary?</button><br>
+    <p id="demo"></p>
+    <script>
+        function binaryCheck() {
 
+          
+            var x, text;
+
+            x = document.getElementById("userstory2right").value;
+
+
+            if (isNaN(x) || x < 2 ) {
+                text = "binary number";
+            } else {
+                text = "nonbinary number";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+            
+    </script>
     <br>
     <br>
 
-   
-    <b>user story three:</b><br>
+
+    <b>enter the text you want to see bolded</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory3left" onkeyup="populateStory3();" />
 
@@ -76,7 +94,7 @@
     </script>
 
 
-    <b>user story four:</b><br>
+    <b>enter the text you want to see italisized</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory4left" onkeyup="populateStory4();" />
 
@@ -92,7 +110,7 @@
     </script>
 
 
-    <b>user story five:</b><br>
+    <b>enter the text you want reversed</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory5left" onkeyup="populateStory5();" />
 
@@ -105,9 +123,9 @@
     <script>
         function doReverse() {
             var str = document.getElementById('userstory5right').value;
-            alert("" + reverseString( str ) );
+            alert("" + reverseString(str));
         }
-        function reverseString( str ){
+        function reverseString(str) {
             str = str.split('');
             str = str.reverse();
             str = str.join('');
