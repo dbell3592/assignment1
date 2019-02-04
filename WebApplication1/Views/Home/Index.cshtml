@@ -6,10 +6,6 @@
 
     <script type="text/javascript">
 
-
-
-
-
         function populateStory1() {
             document.getElementById('userstory1right').value = document.getElementById('userstory1left').value;
         }
@@ -46,7 +42,7 @@
     <br>
     <script>
         function greenrender() {
-            document.getElementById("userstory1right").style.color = "green";
+            document.getElementById("userstory1right").style.backgroundColor = "green";
         }
     </script>
 
@@ -59,10 +55,11 @@
     <label>text displayed:</label>
     <input type="text" id="userstory2right" />
     <button type="button">is it binary</button><br>
+
     <br>
     <br>
 
-
+   
     <b>user story three:</b><br>
     <label>enter text here:</label>
     <input type="text" id="userstory3left" onkeyup="populateStory3();" />
@@ -101,27 +98,39 @@
 
     <label>text displayed:</label>
     <input type="text" id="userstory5right" />
-    <button type="button">reversetext</button><br>
+    <button type="button" onclick="doReverse()">reversetext</button><br>
     <br>
     <br>
 
+    <script>
+        function doReverse() {
+            var str = document.getElementById('userstory5right').value;
+            alert("" + reverseString( str ) );
+        }
+        function reverseString( str ){
+            str = str.split('');
+            str = str.reverse();
+            str = str.join('');
+            return str;
+        }
+
+    </script>
 
 
     <button type="button" id="darkmode" onclick="darkmode('gray'); darkmode2('white');">darkmode</button>
-    <button type="button"value="Refresh Page" onClick="window.location.reload()">lightmode</button>
-        <script>
-            function darkmode(color) {
-                document.body.style.background = color;
-            }
+    <button type="button" value="Refresh Page" onClick="window.location.reload()">lightmode</button>
 
-        </script>
-        <script>
-            function darkmode2(color) {
-                document.body.style.color = color;
-            }
+    <script>
+        function darkmode(color) {
+            document.body.style.background = color;
+        }
 
-        </script>
+    </script>
+    <script>
+        function darkmode2(color) {
+            document.body.style.color = color;
+        }
 
-
+    </script>
 
 </div>
